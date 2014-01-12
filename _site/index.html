@@ -7,7 +7,7 @@
 <head>
   <meta charset="utf-8" />
 
-  <title>AngularJs <em>Day</em> - Ancona, 21 Marzo 2014</title>
+  <title>AngularJs Day - Ancona, 21 Marzo 2014</title>
 
   <!-- Responsive and mobile friendly stuff -->
   <meta name="HandheldFriendly" content="True">
@@ -42,7 +42,7 @@
 </head>
 
 
-<body onload="initialize_map()">
+<body >
 
 
   <div id="wrapper">
@@ -56,8 +56,9 @@
              <li><a href="#cfp" title="">Call for paper</a></li> 
             
             
-            <li><a href="#location" title="">La location</a></li>
+            
             <li><a href="#sponsor" title="">Gli sponsor</a></li>
+            <li><a href="#mediapartner">Media Partner</a></li>
           </ul>
         </nav>
       </div>
@@ -67,24 +68,28 @@
           <p class="organizer"><a id="logo_grusp" class="organizer_logo" href="http://www.grusp.it/"><img src="/img/logo_grusp.png" alt="GrUSP" width="140" height="67" /><span>Associazione Gruppo Utenti Sviluppatori PHP Italiani</span></a>
 
           <em class="plus"><img src="/img/bg_plus.png" alt="bg_plus" width="12" height="12" /></em>
-
-          <a id="logo_grusp_to" class="organizer_logo" href="http://marche.grusp.org/"><img src="/img/pugs/pug_marche.png" alt="pug marche" /><span>PHP User Group Marche </span></a></p>
+          
+            <a id="logo_grusp_marche" class="organizer_logo" href="http://marche.grusp.org/">PUG Marche</a>
+          
+          </p>
 
           <h4>presentano</h4>
         </div>
 
         <div class="event_title">
-          <div class="event_logo column_3">
-            <img src="/img/confs/angular/angularjs.png" alt="AngularJs by google" />
+          <div class="event_logo column_5">
+            <img src="/img/confs/angular/angularjs.png" alt="AngularJs by google" style="max-width:100%;" />
           </div>
-          <div class="event_name column_8">
+          <div class="event_name column_7">
             <h1 id="fittext1">AngularJs <em>Day</em></h1>
+          </div>
+          <div class="event_name column_12">
             <h2 id="fittext2">Ancona, 21 Marzo 2014</h2>
           </div>
           <div class="clear"></div>
         </div>
 
-
+        
         <div class="share">
           <h4>Share</h4>
           <div class="addthis_wrapper">
@@ -110,7 +115,7 @@
         <!-- Follow us -->
               
                 <div class="column_6 centered">
-                        <h4 class="deco">Iscriviti alla newsletter</h4>
+                        <h4 class="">Iscriviti alla newsletter</h4>
                   
                         <div id="subscription-box" class="center">
 
@@ -198,108 +203,6 @@
 
 
 
-<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-<script>
-function initialize_map() {
-        var mapOptions = {
-          zoom: 15,
-          center: new google.maps.LatLng(45.49778, 9.22135),
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-        var map = new google.maps.Map(document.getElementById('map_canvas'),
-                                      mapOptions);
-
-        var I3P = new google.maps.Marker({
-            position: new google.maps.LatLng(45.49778, 9.22135),
-            map: map,
-            icon: 'img/marker_i3p.png',
-			title:"Talent Garden Milano"
-        });
-		var hotel_sanpaolo = new google.maps.Marker({
-            position: new google.maps.LatLng(45.0598373, 7.6529137),
-            map: map,
-            icon: 'img/marker_hotel.png',
-			title:"Hotel Residence San Paolo"
-        });
-		var stazione_portasusa = new google.maps.Marker({
-            position: new google.maps.LatLng(45.49580, 9.21976),
-            map: map,
-            icon: 'img/marker_trasporti.png',
-			title:"Stazione Metro Rovereto"
-        });
-
-		var stazione_turro = new google.maps.Marker({
-            position: new google.maps.LatLng(45.50093, 9.22118),
-            map: map,
-            icon: 'img/marker_trasporti.png',
-			title:"Stazione Metro Turro"
-        });
-
-
-
-      }
-</script>
-
-<a name="location"></a>
-<section class="alpha_32">
-	<div class="container group">
-		<h3 class="column_12">Location</h3>
-		<div class="column_6 map">
-			<div id="map_canvas"></div>
-		</div>
-
-		<div class="column_6 legend right">
-			<dl>
-			  <dt class="event_location"><span><strong>Event location</strong></span></dt>
-			    <dd  class="event_location">
-			    	<a href="http://milano.talentgarden.it/informazioni/">Talent Garden</a><br/>
-				via Merano 18, <br/>
-				Milano, Italy
-				</dd>
-			  <dt class="eat"><span><strong>Dove mangiare</strong></span></dt>
-			    <dd>Ristoranti</dd>
-			  <dt class="get_to"><span><strong>Come arrivare</strong></span></dt>
-			    <dd>Trasporti</dd>
-			  <dt class="stay"><span><strong>Dove dormire</strong></span></dt>
-			    <dd>Alberghi</dd>
-			</dl>
-		</div>
-
-		<div class="clear"></div>
-
-		<div class="column_3">
-			<h5>In auto</h5>
-			<p>Dall'autostrada, seguire le indicazioni per il centro.</p>
-
-		</div>
-
-		<div class="column_3">
-			<h5>In treno</h5>
-			<p>
-				<strong>Dalla stazione Centrale (Frecciarossa)</strong>: prendere la  metro in direzione Duomo, cambiare e prendere la metro Rossa in direzione Turro o Rovereto. Scendere ad una di queste due fermate e proseguire a piedi per via Merano 18.
-			</p>
-		</div>
-
-		<div class="column_3">
-			<h5>In aereo</h5>
-			<p>
-				<strong>Da Linate</strong>: prendi la linea 73 fino a San Babila e poi prendi la M1 fino a Turro.
-			</p>
-		</div>
-
-		<div class="column_3">
-			<h5>Pernottamento</h5>
-			<p>
-<a href="http://www.booking.com/searchresults.it.html?label=gog235jc-district-it-it-milan_vialemonza-unspec-it-com;sid=27e9aa428736e19252d95a2043406490;dcid=1;checkin_monthday=1;checkin_year_month=2013-2;checkout_monthday=2;checkout_year_month=2013-2;class_interval=1;csflt=%7B%7D;inac=0;offset=0;redirected_from_city=0;redirected_from_landmark=0;review_score_group=empty;score_min=0;si=ai%2Cco%2Cci%2Cre%2Cdi;src=searchresults;ss_all=0;;district=2062;city=-121726;origin=disamb;srhash=4267253188;srpos=1" target="_blank">Alberghi in zona</a>
-			</p>
-		</div>
-	</div>
-
-
-	<div class="clear"></div>
-</div>
-<div class="separator"></div>
-</section>	
 <section class="sponsors">
   <a name="sponsor"></a>
   <div class="container group">
@@ -324,6 +227,7 @@ function initialize_map() {
         <li>Autorizzazione a portare pubblicità e gadget (ie. volantini, adesivi, magliette)</li>
         <li>Presenza logo sul programma stampato</li>
         <li>Posizionamento del vostro flyer nella sala</li>
+        <li>3 biglietti gratuiti</li>
       </ul>
     </div>
 
@@ -335,6 +239,7 @@ function initialize_map() {
         <li>Pubblicità nelle comunicazioni pre-evento</li>
         <li>Autorizzazione a portare pubblicità e gadget (ie. volantini, adesivi, magliette)</li>
         <li>Presenza logo sul programma stampato</li>
+        <li>2 biglietti gratuiti</li>
       </ul>
     </div>
 
@@ -344,6 +249,7 @@ function initialize_map() {
       <ul class="benefit">
         <li>Banner sul sito</li>
         <li>Autorizzazione a portare pubblicità e gadget (ie. volantini, adesivi, magliette)</li>
+        <li>1 biglietto gratuito</li>
       </ul>
     </div>
 
@@ -369,35 +275,54 @@ function initialize_map() {
   <div class="bronze_sponsors">
     <h4 class="bronze">Bronze</h4>
 
-    <a class="banner" href="http://www.phpbestpractices.it" title="PHP best practices">
+    <a class="banner" target="_blank" href="http://www.phpbestpractices.it" title="PHP best practices">
       <img src="/img/sponsors/sponsor_phpbestpractices.png" alt="sponsor PHP best practices" width="300" height="120" />
     </a>
 
-    <a class="banner" href="http://www.jsbestpractices.it" title="PHP best practices">
+    <a class="banner" target="_blank" href="http://www.jsbestpractices.it" title="PHP best practices">
       <img src="/img/sponsors/sponsor_jsbestpractices.png" alt="sponsor Js best practices" width="300" height="120" />
     </a>
 
-    <a class="banner" href="http://www.phpday.it" title="phpday">
+    <a class="banner" target="_blank" href="http://www.phpday.it" title="phpday">
       <img src="/img/sponsors/sponsor_phpday.png" alt="sponsor phpday" />
     </a>
 
-    <a class="banner" href="http://www.ideato.it" title="Ideato">
+    <a class="banner" target="_blank" href="http://www.ideato.it" title="Ideato">
       <img src="/img/sponsors/sponsor_ideato.jpg" alt="sponsor ideato" />
     </a>
 
-    <!--a class="banner" href="http://qrurl.it/r/1in" title="servergrove">
-      <img src="/img/sponsor_servergrove.jpg" alt="sponsor Servergrove" />
-    </a-->
+    <a class="banner" target="_blank" href="http://goo.gl/7QzkZC" title="e-xtrategy">
+      <img src="/img/sponsors/sponsor_extrategy.jpg" alt="sponsor e-xtrategy" />
+    </a>
 
-    <a class="banner" href="http://www.jsday.it" title="jsday">
+    <a class="banner" target="_blank" href="http://www.prxm.it/" title="proximo">
+      <img src="/img/sponsors/sponsor_proximo.png" alt="sponsor proximo" />
+    </a>
+
+    <a class="banner" target="_blank" href="http://www.jsday.it" title="jsday">
       <img src="/img/sponsors/sponsor_jsday.png" alt="sponsor jsday" />
     </a>
 
-  <div class="clear"></div>
+    <div class="clear"></div>
   </div>
-
   </div>
   <div class="separator"></div>
+</section>
+<section class="mediapartner">
+  <a name="mediapartner"></a>
+  <div class="container group">
+
+  <div class="container group">
+    <h3 class="center">Media Partner</h3>
+    <div class="">
+      <a class="banner" target="_blank" href="http://www.cowo42.com/" title="Cowo 42" style="background-color:white;">
+        <img src="/img/sponsors/sponsor_cowo42.png" alt="media partner cowo42" width="300" height="120" />
+      </a>
+      <div class="clear"></div>
+    </div>
+
+    </div>
+    <div class="separator"></div>
 </section>
 
       
