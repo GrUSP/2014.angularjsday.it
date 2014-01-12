@@ -336,6 +336,16 @@ a#logo_grusp span, a#logo_grusp_to span, .organizer_logo span{
 	display: none;
 }
 
+a#logo_grusp_marche {
+	font-family: 'Exo', sans-serif;
+	font-size: 30px;
+	line-height: 40px;
+	margin-bottom: 20px;
+	color: #fff;
+	font-weight: 900;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+}
+
 em.plus{
 	margin: 0 3%;
 }
@@ -656,11 +666,13 @@ a:hover.slides{
 
 
 /* Sponsors */
-.sponsors{
+.sponsors,
+.mediapartner{
 	text-align: center;
 	margin-bottom: 80px;
 }
-.sponsors .banner{
+.sponsors .banner,
+.mediapartner .banner{
 	display: inline-block;
 	margin-left: 1%;
 	margin-right: 1%;
@@ -671,12 +683,14 @@ a:hover.slides{
 	-webkit-box-shadow: 0 0 5px rgba(0,0,0,.5);
 	box-shadow: 0 0 5px rgba(0,0,0,.5);
 }
-.sponsors .banner img{
+.sponsors .banner img,
+.mediapartner .banner img{
 	width: 100%;
 	height: auto;
 }
 
-.sponsors h4 {
+.sponsors h4,
+.mediapartner h4 {
 	font-size: 24px;
 
 }
@@ -721,7 +735,9 @@ a:hover.slides{
 	width: 13.5%;
 }
 
-
+.mediapartner .banner {
+	width: 13.5%;
+}
 
 /* footer */
 
