@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<!--[if lt IE 7]> <html prefix="og: http://ogp.me/ns#" class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html prefix="og: http://ogp.me/ns#" class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html prefix="og: http://ogp.me/ns#" class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html prefix="og: http://ogp.me/ns#" lang="en"> <!--<![endif]-->
 <head>
   <meta charset="utf-8" />
 
   <title>{{ page.title }} - {{ page.conf_data }}</title>
 
   <!-- FB OpenGraph -->
+  <meta property="og:type"   content="website" /> 
   <meta property="og:image" content="http://angularjsday.it/img/logo_fb_angular.jpg" />
+  <meta property="og:description" content="In seno al JsDay nasce la prima giornata dedicata ad AngularJs! Con una formula leggera, che prevede talk in italiano di diversa complessità durante la giornata verranno trattati temi interenti allo sviluppo con AngularJs." />
   <meta property="og:title" content="AngularJS Day"/>
   <meta property="og:url" content="http://angularjsday.it"/>
 
