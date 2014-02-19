@@ -60,9 +60,9 @@
           <ul class="container">
             <li><a href="#top" title="AngularJs Day">AngularJs Day</a></li>
             <li><a href="#info" title="">La conferenza</a></li>
-             <li><a href="#cfp" title="">Call for paper</a></li> 
-             <li><a href="#tickets" title="">Registrati</a></li> 
             
+             <li><a href="#tickets" title="">Registrati</a></li> 
+             <li><a href="#programma" title="">Programma</a></li> 
             
             <li><a href="#sponsor" title="">Gli sponsor</a></li>
             <li><a href="#mediapartner">Media Partner</a></li>
@@ -192,20 +192,7 @@
 <div class="separator"></div>
 </section>	
 
- <a name="cfp"></a>
-<section class="alpha_24">
-  <div class="container group">
-  <div class="column_6 centered">
-    <h3 class="center">Call for Paper</h3>
-    <p>Il <a href="https://docs.google.com/spreadsheet/viewform?formkey=dEgzZlE3UklrNk1qUkwyaVFoaHFfY3c6MA">call for paper è aperto</a> a tutti e chiuderà il <strong>15 febbraio 2014</strong>. <br/>
 
-    Affrettati ad <a href="https://docs.google.com/spreadsheet/viewform?formkey=dEgzZlE3UklrNk1qUkwyaVFoaHFfY3c6MA">inviarci la tua proposta</a>. I relatori selezionati avranno rimborsata la notte d'albergo precedente all'evento.</p>
-  </div>
-
-    <div class="clear"></div>
-</div>
-<div class="separator"></div>
-</section> 
  <section class="alpha_24">
 <a name="tickets"></a>
 <div class="container group center">
@@ -222,7 +209,160 @@
 <div class="separator"></div>
 </section>
  
+ <a name="programma"></a>
+<section class="alpha_24">
+  <div class="container group">
+    <h3 class="center">Il programma</h3>
+    <table id="schedule" border="0" cellspacing="0" cellpadding="0">
+      <thead>
+        <tr>
+          <th>
+            Time
+          </th>
+          <th>
+            Track 1
+          </th>
 
+        </tr>
+      </thead>
+      <tr class="common_event">
+        <td class="time">09:00 &ndash; 09:30</td>
+        <td><h4><a href="#" title="">Check-in</a></h4></td>
+      </tr>
+
+      <tr class="common_event">
+        <td class="time">09:30 &ndash; 09:45</td>
+        <td>
+            <h4><a href="#" title="">Presentazione GrUSP</a></h4>
+            <a href="http://twitter.com/fullo" title="Francesco Fullone">Francesco Fullone - @fullo</a><br />
+        </td>
+      </tr>
+
+      <tr class="common_event">
+        <td class="time">09:45 &ndash; 10:00</td>
+        <td>
+            <h4><a href="#" title="">Presentazione PUG Marche</a></h4>
+            <a href="http://twitter.com/cphp" title="Francesco Trucchia">Francesco Trucchia - @cphp</a><br />
+<!--                          <a href="#" title="" class="slides">Slide</a> -->
+
+        </td>
+      </tr>
+
+
+      <tr class="common_event">
+        <td class="time">10:05 &ndash; 10:50</td>
+        <td>
+            <h4><a href="#" onclick="javascript:return(false);" rel="tooltip" title="E' buona pratica suddividere l'applicazione in componenti o moduli, i vantaggi sono i soliti:
+isolamento, separazione delle responsabilità, maggiore testabilità, etc... Il problema allora diviene: Come (e quando) creo i componenti? Come configuro l'applicazione e gestisco le dipendenze?
+E la gestione del ciclo di vita? Potete 'addattarvi' usando Require.js in modo 'improprio', oppure sfruttare le feature
+Built-in di AngularJS e vivere felici. Di più: avere un sistema IoC/DI permette di sfruttare anche in Javascript paradgmi della programmazione AOP come: interceptors, decorator pattern, etc.">Dependency Injection ?!? In Javascript?!? Magari!</a></h4>
+            <a href="https://twitter.com/A_Giorgetti" title="Alessandro Giorgetti">Alessandro Giorgetti - @A_Giorgetti</a><br />
+<!-- <a href="" title="" class="slides">Slide</a> -->
+        </td>
+      </tr>
+
+      <tr class="break">
+        <td class="time">10:50 &ndash; 11:05</td>
+        <td>
+          <h4><strong>Pausa</strong></h4>
+        </td>
+      </tr>
+
+      <tr class="common_event">
+        <td class="time">11:05 &ndash; 11:35</td>
+        <td>
+            <h4><a href="#"  onclick="javascript:return(false);" rel="tooltip"  title="AngularJs mette a disposizione diversi strumenti per l'interazione con risorse REST,permettendoci così di creare app in grado di interagire facilmente con la nostra base di dati.
+Costruire un'applicazione che sappia interagire nel modo corretto con queste risorse è però un procedimento delicato. In questo talk scopriremo i principali strumenti messi a disposizione dal linguaggio (dal $http al ngResource fino a librerie come Restangular), con esempi concreti di codice, e un'approfondita sessione sulle best practice da adottare per gestire correttamente l'autenticazione.">RESTful services con AngularJs</a></h4>
+            <a href="http://twitter.com/gabrielemittica" title="Gabriele Mittica">Gabriele Mittica - @gabrielemittica</a><br />
+<!--<a href="" title="" class="slides">Slide</a> -->
+
+        </td>
+      </tr>
+
+
+      <tr class="common_event">
+        <td class="time">11:40 &ndash; 12:25</td>
+        <td>
+            <h4><a href="#"  onclick="javascript:return(false);" rel="tooltip" title="Come realizzare con AngularJS una dashboard per consultare in tempo reale l'andamento dei piloti in una gara del MotoGP. Tutte le variazioni saranno notificate al client evitando il polling continuo al server. L'architettura dell'applicazione seguirà il paradigma della Command-Query-Responsibility-Segregation (CQRS) in 'salsa' REST.">Don't call us, we'll call you</a></h4>
+            <a href="http://twitter.com/fewbit" title="Luca Milan e Claudio Pattarello">Luca Milan e Claudio Pattarello - @fewbit</a><br />
+<!--<a href="" title="" class="slides">Slide</a>-->
+
+        </td>
+      </tr>
+
+      <tr class="common_event">
+        <td class="time">12:30 &ndash; 13:00</td>
+        <td>
+            <h4><a href="#"  onclick="javascript:return(false);" rel="tooltip" title="Il concetto di test automatico è spesso trascurato (se non completamente sconosciuto), soprattutto quando si tratta di javascript e front-end. AngularJS è uno dei pochi framework che permette di testare in maniera solida tutti i componenti della propria applicazione. Desidero introdurre il concetto di testing (come/perchè/benefici) ed illustrare i tool necessari (Karma + Jasmine). Spiegherò come utilizzarli completando ogni passaggio con qualche esempio pratico.">Testing with AngularJS</a></h4>
+            <a href="http://twitter.com/jnardiello" title="Jacopo Nardiello">Jacopo Nardiello - @jnardiello</a><br />
+<!--<a href="" title="" class="slides">Slide</a>-->
+        </td>
+      </tr>
+
+      <tr class="break lunch">
+      <td class="time">13:00 &ndash; 14:15</td>
+
+        <td><h4><strong>Pranzo</strong></h4></td>
+      </tr>
+
+      <tr class="common_event">
+        <td class="time">14:15 &ndash; 14:45</td>
+        <td>
+            <h4><a href="#"  onclick="javascript:return(false);" rel="tooltip" title="Ogni volta che una nuova tecnologia arriva all'orizzonte le principali resistenze sono dovute al fatto che, spesso, occorre cambiare completamente tutti i propri strumenti di lavoro. AngularJS permette di continuare a utilizzare la maggior parte dei plugin (magari anche con proprie dipendenze) ai quali siamo abituati semplicemente creando delle direttive per contenerli.">Dei plugin non si butta via niente</a></h4>
+            <a href="http://twitter.com/apasella" title="Antonello Pasella">Antonello  Pasella - @apasella</a><br />
+<!--<a href="#" title="" class="slides">Slide</a>-->
+        </td>
+      </tr>
+
+      <tr class="common_event">
+        <td class="time">14:50 &ndash; 15:20</td>
+        <td>
+            <h4><a href="#"  onclick="javascript:return(false);" rel="tooltip" title="Caso pratico: da anni mi occupo di sviluppo Web e, quindi, conosco ogni segreto di HTML, JavaScript, CSS e, da qualche mese, AngularJS. Un bel giorno mi contatta un cliente famosissimo e mi chiede di sviluppare un'app per Windows 8. Mi sento offeso: ad un Web Dev chiedono un "programma" per Windows?! Rispondo NO! ERRORE!!! In questa sessione, dopo una breve introduzione sulle Windows Store App, vedremo come AngularJS ci viene in aiuto nello sviluppo di app per Windows 8.">Sviluppare Windows Store App con AngularJS</a></h4>
+            <a href="http://twitter.com/bossinigianni" title="Gianni Bortolo Bossini">Gianni Bortolo Bossini - @bossinigianni</a><br />
+<!--<a href="" title="" class="slides">Slide</a>-->
+        </td>
+      </tr>
+
+
+      <tr class="break">
+        <td class="time">15:20 &ndash; 15:35</td>
+        <td>
+          <h4><strong>Pausa</strong></h4>
+        </td>
+      </tr>
+
+
+      <tr class="common_event">
+        <td class="time">15:35 &ndash; 16:05</td>
+        <td>
+            <h4><a href="#"  onclick="javascript:return(false);" rel="tooltip" title="Le direttive sono la ciliegina sulla torta di AngularJS, uno dei loro ruoli è quello di costruire componenti riutilizzabili o di fare le 'cose' alla 'angular-way'. Obiettivo della sessione è analizzare come funzionano le direttive e costruire insieme una direttiva per realizzare un typeahead riutilizzabile in applicazioni diverse.">AngularJS e le direttive: costruzione di un typeahead custom</a></h4>
+            <a href="http://twitter.com/mauroservienti" title="Mauro Servienti">Mauro Servienti - @mauroservienti</a><br />
+<!--<a href="#" title="" class="slides">Slide</a>-->
+
+        </td>
+      </tr>
+
+
+      <tr class="common_event">
+        <td class="time">16:10 &ndash; 16:40</td>
+        <td>
+            <h4><a href="#"  onclick="javascript:return(false);" rel="tooltip" title="Panoramica sul sistema di binding di AngularJs. Vantaggi e svantaggi del dirty checking. BindOnce e i problemi che risolve. Utilizzo pratico di BindOnce. Ottimizzazione e best practices">Angular bindings e BindOnce</a></h4>
+            <a href="http://twitter.com/PasqualeVazzana" title="Pasquale Vazzana">Pasquale Vazzana - @PasqualeVazzana</a><br />
+<!--<a href="" title="" class="slides">Slide</a>-->
+
+        </td>
+      </tr>
+
+      <tr class="common_event">
+        <td class="time">16:45</td>
+        <td><h4><a href="#" title="">Chiusura</a></h4></td>
+      </tr>
+    </table>
+
+  </div>
+
+  <div class="separator"></div>
+</section> 
 
 
 
